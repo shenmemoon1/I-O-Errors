@@ -10,18 +10,14 @@ const Navbar = () => {
 
   return (
     <header className="header">
-      <NavLink
-        to="/"
-        className={({ isActive }) =>
-          `px-6 py-3 ${isActive ? "text-blue-500" : "text-black"}`
-        }
-      >
+      <NavLink to="/" className="px-6 py-3 font-bold font-mono flex gap-1 ">
         <img src={farmer} alt="Farmer" className="w-6 h-6" />
+        I/O Errors
       </NavLink>
 
       {/* 移动端菜单 */}
       <div
-        className={`lg:hidden absolute right-2 border px-3 py-2 rounded-lg top-16 bg-gradient-to-bl from-indigo-400 to-indigo-200 ${
+        className={`lg:hidden absolute right-2 border px-3 py-2 rounded-lg top-16 bg-gradient-to-tr from-indigo-400 to-indigo-200 ${
           isOpen ? "block" : "hidden"
         }`}
       >
@@ -39,7 +35,7 @@ const Navbar = () => {
         </NavLink>
         <NavLink
           to="/login"
-          className="block px-6 py-2 mt-3 rounded-full shadow-md text-white bg-gradient-to-r from-purple-500 to-indigo-500"
+          className="block px-6 py-2 mt-3 rounded-full shadow-md text-center text-white bg-gradient-to-r from-purple-500 to-indigo-500"
         >
           Login
         </NavLink>
