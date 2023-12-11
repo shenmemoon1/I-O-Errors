@@ -1,13 +1,12 @@
 import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
 import { Home, About, FrontEnd, Flutter, DotNet, Login, SignUp } from "./pages";
-import { Nav } from "./components";
-
+import { NavBar } from "./components";
 function App() {
   return (
     <main>
       <Router>
-        <Nav />
-        <div className="mt-16">
+        <NavBar />
+        <div className="relative top-24">
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/frontend" element={<FrontEnd />} />

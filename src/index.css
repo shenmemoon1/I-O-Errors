@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 .header {
-  @apply flex justify-between items-center sm:px-16 px-8 py-4 max-w-7xl mx-auto absolute top-0 bg-transparent z-10 left-0 right-0;
+  @apply flex justify-between items-center sm:px-16 px-8 py-4 max-w-7xl mx-auto absolute top-0 bg-transparent z-10 left-0 right-0 border-b-2;
 }
 
 .box {
