@@ -99,6 +99,7 @@ const Navbar = () => {
           to="/login"
           className="relative flex items-center justify-center px-6 py-2 rounded-full shadow-md text-white bg-gradient-to-r from-purple-500 to-indigo-500"
         >
+          <span className="absolute w-full h-full border-2 block rounded-full"></span>
           Login
         </NavLink>
         <NavLink
