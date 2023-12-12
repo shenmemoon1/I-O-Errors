@@ -8,9 +8,17 @@ const Navbar = () => {
     setIsOpen(!isOpen);
   };
 
+  const closeMenu = () => {
+    setIsOpen(false);
+  };
+
   return (
     <header className="header">
-      <NavLink to="/" className="px-6 py-3 font-bold font-mono flex gap-1 ">
+      <NavLink
+        to="/"
+        className="px-6 py-3 font-bold font-mono flex gap-1"
+        onClick={closeMenu}
+      >
         <img src={farmer} alt="Farmer" className="w-6 h-6" />
         I/O Errors
       </NavLink>
@@ -21,27 +29,29 @@ const Navbar = () => {
           isOpen ? "block" : "hidden"
         }`}
       >
-        <NavLink to="/frontend" className="block px-6 py-3">
+        <NavLink to="/frontend" className="block px-6 py-3" onClick={closeMenu}>
           FrontEnd
         </NavLink>
-        <NavLink to="/flutter" className="block px-6 py-3">
+        <NavLink to="/flutter" className="block px-6 py-3" onClick={closeMenu}>
           Flutter
         </NavLink>
-        <NavLink to="/dotnet" className="block px-6 py-3">
+        <NavLink to="/dotnet" className="block px-6 py-3" onClick={closeMenu}>
           DotNet
         </NavLink>
-        <NavLink to="/about" className="block px-6 py-3">
+        <NavLink to="/about" className="block px-6 py-3" onClick={closeMenu}>
           About
         </NavLink>
         <NavLink
           to="/login"
           className="block px-6 py-2 mt-3 rounded-full shadow-md text-center text-white bg-gradient-to-r from-purple-500 to-indigo-500"
+          onClick={closeMenu}
         >
           Login
         </NavLink>
         <NavLink
           to="/signup"
           className="block px-6 py-2 mt-2 rounded-full shadow-md border-solid border-2 border-indigo-500 text-indigo-500"
+          onClick={closeMenu}
         >
           SignUp
         </NavLink>
