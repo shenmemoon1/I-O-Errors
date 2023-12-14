@@ -1,5 +1,11 @@
+import { JoinForm } from "../components";
+
 const Login = () => {
-  return <div>Login</div>;
+  return (
+    <>
+      <JoinForm jtext="Login" />
+    </>
+  );
 };
 
 export default Login;
